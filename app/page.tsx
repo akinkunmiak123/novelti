@@ -101,7 +101,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Hard facts, not feature cards */}
       <section className="bg-ink text-paper">
         <div className="mx-auto grid max-w-6xl divide-y divide-white/12 px-5 py-8 sm:grid-cols-2 sm:divide-x sm:divide-y-0 lg:grid-cols-4">
@@ -131,7 +130,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Services — alternating, not a three-card grid */}
       <section className="mx-auto max-w-6xl px-5 py-20">
         <h2 className="max-w-[20ch] text-3xl sm:text-4xl">
@@ -176,7 +174,6 @@ export default function HomePage() {
           ))}
         </div>
       </section>
-
       {/* Process — numbered because it genuinely is a sequence */}
       <section className="border-y border-line bg-moss-pale">
         <div className="mx-auto max-w-6xl px-5 py-20">
@@ -198,30 +195,119 @@ export default function HomePage() {
           </ol>
         </div>
       </section>
-
+      {/* Reviews */}
+      ```tsx
       {/* Reviews */}
       <section className="mx-auto max-w-6xl px-5 py-20">
-        <h2 className="max-w-[24ch] text-3xl sm:text-4xl">
-          What customers say.
-        </h2>
+        <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+          <div>
+            <p className="font-display text-sm font-bold uppercase tracking-wide text-moss">
+              Google reviews
+            </p>
+
+            <h2 className="mt-2 max-w-[24ch] text-3xl sm:text-4xl">
+              What customers say.
+            </h2>
+
+            <p className="mt-4 max-w-[50ch] leading-relaxed text-steel">
+              4.9 stars from 12 Google reviews. Here are a few words from
+              customers who have used Novelti Cleaning.
+            </p>
+          </div>
+
+          <a
+            href="https://www.google.com/search?q=novelticleaning&oq=nov&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgoIAhAAGLEDGIAEMgoIAxAAGLEDGIAEMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGEHSAQgxNjIwajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x48711b28544e983f:0x2f3ef59d63e61ce9,1,,,,"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block shrink-0 border-b-2 border-amber pb-0.5 font-display font-bold text-ink hover:border-moss"
+          >
+            Read all reviews on Google
+          </a>
+        </div>
+
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
-          {[1, 2, 3].map((n) => (
-            <blockquote
-              key={n}
-              className="border border-line bg-white p-7 text-[15px] leading-relaxed text-steel"
-            >
-              <p>
-                Real Google review {n} goes here — pull the wording, first name
-                and town straight from the Google Business Profile.
+          {/* Review 1 */}
+          <blockquote className="border border-line bg-white p-7 text-[15px] leading-relaxed text-steel">
+            <div className="mb-5 flex gap-1" aria-label="5 out of 5 stars">
+              {'★★★★★'.split('').map((star, index) => (
+                <span key={index} className="text-amber">
+                  {star}
+                </span>
+              ))}
+            </div>
+
+            <p>
+              “Very friendly and professional. The house was left spotless and
+              smells incredible. I would definitely recommend using them.”
+            </p>
+
+            <footer className="mt-6">
+              <p className="font-display font-bold text-ink">
+                George Bou Abboud
               </p>
-              <footer className="mt-5 font-display font-bold text-ink">
-                Name, Town
-              </footer>
-            </blockquote>
-          ))}
+              <p className="mt-1 text-sm text-steel">Google reviewer</p>
+            </footer>
+          </blockquote>
+
+          {/* Review 2 */}
+          <blockquote className="border border-line bg-white p-7 text-[15px] leading-relaxed text-steel">
+            <div className="mb-5 flex gap-1" aria-label="5 out of 5 stars">
+              {'★★★★★'.split('').map((star, index) => (
+                <span key={index} className="text-amber">
+                  {star}
+                </span>
+              ))}
+            </div>
+
+            <p>
+              “They did an amazing job cleaning up my house. You guys did a
+              thorough and professional cleaning. You guys came through for me
+              at the last minute so that I could have a professionally cleaned
+              house before my house inspection. They are indeed very reliable.”
+            </p>
+
+            <footer className="mt-6">
+              <p className="font-display font-bold text-ink">Vera Uwabor</p>
+              <p className="mt-1 text-sm text-steel">Google reviewer</p>
+            </footer>
+          </blockquote>
+
+          {/* Review 3 */}
+          <blockquote className="border border-line bg-white p-7 text-[15px] leading-relaxed text-steel">
+            <div className="mb-5 flex gap-1" aria-label="5 out of 5 stars">
+              {'★★★★★'.split('').map((star, index) => (
+                <span key={index} className="text-amber">
+                  {star}
+                </span>
+              ))}
+            </div>
+
+            <p>
+              “I am very happy and pleased with this company. Victoria was
+              punctual, warm and friendly, very hard worker, she left my house
+              clean and smelling fresh! Thank you. I will definitely hire them
+              again!”
+            </p>
+
+            <footer className="mt-6">
+              <p className="font-display font-bold text-ink">Margo Laszlo</p>
+              <p className="mt-1 text-sm text-steel">Google reviewer</p>
+            </footer>
+          </blockquote>
+        </div>
+
+        <div className="mt-8 text-center">
+          <a
+            href="https://www.google.com/search?q=novelticleaning&oq=nov&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgoIAhAAGLEDGIAEMgoIAxAAGLEDGIAEMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGEHSAQgxNjIwajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x48711b28544e983f:0x2f3ef59d63e61ce9,1,,,,"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-display text-sm font-bold text-moss hover:text-moss-deep"
+          >
+            See all reviews →
+          </a>
         </div>
       </section>
-
+      ```
       {/* Quote */}
       <section id="quote" className="border-t border-line bg-white">
         <div className="mx-auto grid max-w-6xl gap-12 px-5 py-20 lg:grid-cols-[0.8fr_1.2fr]">
