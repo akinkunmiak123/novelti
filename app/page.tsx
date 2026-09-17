@@ -68,8 +68,8 @@ export default function HomePage() {
               Cleaners who turn up, in Cheltenham, Yate and Bristol.
             </h1>
             <p className="mt-6 max-w-[46ch] text-lg leading-relaxed text-white/85">
-              Novelti is a Cheltenham-based team cleaning homes, offices
-              and rentals across Gloucestershire. Fixed prices, eco-friendly
+              Novelti is a Cheltenham-based team cleaning homes, offices and
+              rentals across Gloucestershire. Fixed prices, eco-friendly
               products, and the same faces each visit.
             </p>
 
@@ -298,7 +298,7 @@ export default function HomePage() {
 
         <div className="mt-8 text-center">
           <a
-            href="https://www.google.com/search?q=novelticleaning&oq=nov&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIGCAEQRRg5MgoIAhAAGLEDGIAEMgoIAxAAGLEDGIAEMgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGEHSAQgxNjIwajBqN6gCALACAA&sourceid=chrome&source=chrome.ob&ie=UTF-8#lrd=0x48711b28544e983f:0x2f3ef59d63e61ce9,1,,,,"
+            href="https://www.google.com/maps/place/Novelti+Cleaning/@51.884894,-2.1269768,17z/data=!4m8!3m7!1s0x48711b28544e983f:0x2f3ef59d63e61ce9!8m2!3d51.884894!4d-2.1269768!9m1!1b1!16s%2Fg%2F11wj2g_71_?entry=ttu&g_ep=EgoyMDI2MDkxNC4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="font-display text-sm font-bold text-moss hover:text-moss-deep"
