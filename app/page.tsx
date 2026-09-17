@@ -68,7 +68,7 @@ export default function HomePage() {
               Cleaners who turn up, in Cheltenham, Yate and Bristol.
             </h1>
             <p className="mt-6 max-w-[46ch] text-lg leading-relaxed text-white/85">
-              Novelti is a small Cheltenham-based team cleaning homes, offices
+              Novelti is a Cheltenham-based team cleaning homes, offices
               and rentals across Gloucestershire. Fixed prices, eco-friendly
               products, and the same faces each visit.
             </p>
