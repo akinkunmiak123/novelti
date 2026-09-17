@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Photo from '@/components/Photo'
+import TownIcon from '@/components/TownIcon'
+import AreaMap from '@/components/AreaMap'
 import CtaBand from '@/components/CtaBand'
 
 export const metadata: Metadata = {
@@ -67,12 +68,7 @@ export default function AreasPage() {
             </div>
           </div>
 
-          <Photo
-            alt="Map area covered by Novelti Cleaning Services"
-            brief="a simple map graphic or a photo representing the region — Gloucestershire and north Bristol"
-            className="min-h-[280px] lg:min-h-full"
-            priority
-          />
+          <AreaMap />
         </div>
       </section>
 
@@ -86,9 +82,10 @@ export default function AreasPage() {
               id={area.slug}
               className="grid scroll-mt-24 items-center gap-8 lg:grid-cols-2 lg:gap-14"
             >
-              <Photo
-                alt={area.name}
-                brief={area.brief}
+              <TownIcon
+                town={
+                  area.slug as 'cheltenham' | 'gloucester' | 'yate' | 'bristol'
+                }
                 className={`min-h-[220px] ${i % 2 === 1 ? 'lg:order-2' : ''}`}
               />
               <div>

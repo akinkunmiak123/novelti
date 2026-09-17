@@ -93,6 +93,7 @@ export default async function ContactPage({
 
           <Photo
             alt="The Novelti team ready to help"
+            src="/Images/contact/contact.jpg"
             brief="a friendly, real photo of Bunmi or the team — contact pages convert better with a face, not just a form"
             className="min-h-[280px]"
           />
